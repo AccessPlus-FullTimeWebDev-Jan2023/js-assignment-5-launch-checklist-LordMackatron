@@ -42,28 +42,28 @@ function formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel) {
    let theStuff = document.getElementById("cargoStatus");
    let canWeLaunch = document.getElementById("launchStatus");
    captain.innerHTML = `Pilot ${pilot} is ready for launch`;
-   firstMate.innerHTML = `Co-Pilot ${copilot} is ready for launch`;
+   firstMate.innerHTML = `Co-pilot ${copilot} is ready for launch`;
     list.style.visibility = 'visible';
     if (fuelLevel < 10000 && cargoLevel > 10000) {
        fuelTank.innerHTML = "Fuel level too low for launch";
        theStuff.innerHTML = "Cargo mass too heavy for launch";
-       canWeLaunch.innerHTML = "Shuttle not ready for launch";
-       canWeLaunch.style.color = "red";
+       canWeLaunch.innerHTML = "Shuttle Not Ready for Launch";
+       canWeLaunch.style.color = "rgb(199, 37, 78)";
    } else if (fuelLevel < 10000 && cargoLevel <= 10000) {
        fuelTank.innerHTML = "Fuel level too low for launch";
        theStuff.innerHTML = "Cargo mass low enough for launch"
-       canWeLaunch.innerHTML = "Shuttle not ready for launch";
-       canWeLaunch.style.color = "red";       
+       canWeLaunch.innerHTML = "Shuttle Not Ready for Launch";
+       canWeLaunch.style.color = "rgb(199, 37, 78)";       
    } else if (fuelLevel >= 10000 && cargoLevel > 10000) {
        fuelTank.innerHTML = "Fuel level high enough for launch";
        theStuff.innerHTML = "Cargo mass too heavy for launch";
-       canWeLaunch.innerHTML = "Shuttle not ready for launch";
-       canWeLaunch.style.color = "red";
+       canWeLaunch.innerHTML = "Shuttle Not Ready for Launch";
+       canWeLaunch.style.color = "rgb(199, 37, 78)";
    } else if (fuelLevel >= 10000 && cargoLevel <= 10000) {
        fuelTank.innerHTML = "Fuel level high enough for launch";
        theStuff.innerHTML = "Cargo mass low enough for launch";
-       canWeLaunch.innerHTML = "Shuttle is ready for launch";
-       canWeLaunch.style.color = "green";
+       canWeLaunch.innerHTML = "Shuttle is Ready for Launch";
+       canWeLaunch.style.color = "rgb(65, 159, 106)";
    }
    
 //    else if (fuelLevel >= 10000) {
